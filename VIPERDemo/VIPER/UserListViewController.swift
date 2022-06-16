@@ -22,11 +22,11 @@ class UserListViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-            setup()
+        setup()
         
         users = APIManager.getUserList()
         
-        }
+    }
     
     //MARK:- Helpers
     
@@ -49,7 +49,7 @@ extension UserListViewController {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: kIdentifier) as! UserTableViewCell
-      
+        
         guard let user = users?.userList?[indexPath.row] else { return UITableViewCell()}
         cell.setupCell(with: user)
         return cell
