@@ -16,6 +16,14 @@
 		88673AE6285B42E600EF781C /* VIPERDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88673AE5285B42E600EF781C /* VIPERDemoTests.swift */; };
 		88673AF0285B42E600EF781C /* VIPERDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88673AEF285B42E600EF781C /* VIPERDemoUITests.swift */; };
 		88673AF2285B42E600EF781C /* VIPERDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88673AF1285B42E600EF781C /* VIPERDemoUITestsLaunchTests.swift */; };
+		88673B01285B436700EF781C /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88673B00285B436700EF781C /* UserListViewController.swift */; };
+		88673B03285B439B00EF781C /* UserListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88673B02285B439B00EF781C /* UserListInteractor.swift */; };
+		88673B05285B43CE00EF781C /* UserListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88673B04285B43CE00EF781C /* UserListPresenter.swift */; };
+		88673B07285B43E200EF781C /* UserListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88673B06285B43E200EF781C /* UserListRouter.swift */; };
+		88673B09285B43FC00EF781C /* UserListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88673B08285B43FC00EF781C /* UserListEntity.swift */; };
+		88673B0B285B44DA00EF781C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88673B0A285B44DA00EF781C /* APIManager.swift */; };
+		88673B0E285B496E00EF781C /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88673B0C285B496E00EF781C /* UserTableViewCell.swift */; };
+		88673B0F285B496E00EF781C /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88673B0D285B496E00EF781C /* UserTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		88673AEB285B42E600EF781C /* VIPERDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPERDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88673AEF285B42E600EF781C /* VIPERDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERDemoUITests.swift; sourceTree = "<group>"; };
 		88673AF1285B42E600EF781C /* VIPERDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		88673B00285B436700EF781C /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		88673B02285B439B00EF781C /* UserListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListInteractor.swift; sourceTree = "<group>"; };
+		88673B04285B43CE00EF781C /* UserListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListPresenter.swift; sourceTree = "<group>"; };
+		88673B06285B43E200EF781C /* UserListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListRouter.swift; sourceTree = "<group>"; };
+		88673B08285B43FC00EF781C /* UserListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListEntity.swift; sourceTree = "<group>"; };
+		88673B0A285B44DA00EF781C /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		88673B0C285B496E00EF781C /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		88673B0D285B496E00EF781C /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +115,8 @@
 		88673ACD285B42DD00EF781C /* VIPERDemo */ = {
 			isa = PBXGroup;
 			children = (
+				88673AFF285B431200EF781C /* VIPER */,
+				88673AFE285B430400EF781C /* APIDEMO */,
 				88673ACE285B42DD00EF781C /* AppDelegate.swift */,
 				88673AD0285B42DD00EF781C /* SceneDelegate.swift */,
 				88673AD2285B42DD00EF781C /* ViewController.swift */,
@@ -106,6 +124,8 @@
 				88673AD7285B42E600EF781C /* Assets.xcassets */,
 				88673AD9285B42E600EF781C /* LaunchScreen.storyboard */,
 				88673ADC285B42E600EF781C /* Info.plist */,
+				88673B0C285B496E00EF781C /* UserTableViewCell.swift */,
+				88673B0D285B496E00EF781C /* UserTableViewCell.xib */,
 			);
 			path = VIPERDemo;
 			sourceTree = "<group>";
@@ -125,6 +145,26 @@
 				88673AF1285B42E600EF781C /* VIPERDemoUITestsLaunchTests.swift */,
 			);
 			path = VIPERDemoUITests;
+			sourceTree = "<group>";
+		};
+		88673AFE285B430400EF781C /* APIDEMO */ = {
+			isa = PBXGroup;
+			children = (
+				88673B0A285B44DA00EF781C /* APIManager.swift */,
+			);
+			path = APIDEMO;
+			sourceTree = "<group>";
+		};
+		88673AFF285B431200EF781C /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				88673B00285B436700EF781C /* UserListViewController.swift */,
+				88673B04285B43CE00EF781C /* UserListPresenter.swift */,
+				88673B02285B439B00EF781C /* UserListInteractor.swift */,
+				88673B06285B43E200EF781C /* UserListRouter.swift */,
+				88673B08285B43FC00EF781C /* UserListEntity.swift */,
+			);
+			path = VIPER;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88673B0F285B496E00EF781C /* UserTableViewCell.xib in Resources */,
 				88673ADB285B42E600EF781C /* LaunchScreen.storyboard in Resources */,
 				88673AD8285B42E600EF781C /* Assets.xcassets in Resources */,
 				88673AD6285B42DE00EF781C /* Main.storyboard in Resources */,
@@ -259,8 +300,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				88673AD3285B42DD00EF781C /* ViewController.swift in Sources */,
+				88673B05285B43CE00EF781C /* UserListPresenter.swift in Sources */,
+				88673B01285B436700EF781C /* UserListViewController.swift in Sources */,
+				88673B0B285B44DA00EF781C /* APIManager.swift in Sources */,
+				88673B0E285B496E00EF781C /* UserTableViewCell.swift in Sources */,
+				88673B07285B43E200EF781C /* UserListRouter.swift in Sources */,
+				88673B03285B439B00EF781C /* UserListInteractor.swift in Sources */,
 				88673ACF285B42DD00EF781C /* AppDelegate.swift in Sources */,
 				88673AD1285B42DD00EF781C /* SceneDelegate.swift in Sources */,
+				88673B09285B43FC00EF781C /* UserListEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
