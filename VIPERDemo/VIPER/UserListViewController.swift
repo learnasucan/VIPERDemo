@@ -18,9 +18,19 @@ class UserListViewController: UIViewController, UITableViewDelegate, UITableView
         return tableview
     }()
     
+    var users: UserList?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+            setup()
         
+        users = APIManager.getUserList()
+        
+        }
+    
+    //MARK:- Helpers
+    
+    private func setup() {
         self.view.addSubview(tableview)
         self.view.backgroundColor = .white
         tableview.delegate = self
@@ -28,20 +38,20 @@ class UserListViewController: UIViewController, UITableViewDelegate, UITableView
         
         tableview.register(UINib(nibName: kIdentifier, bundle: nil), forCellReuseIdentifier: kIdentifier)
     }
-    
 }
 
 
 extension UserListViewController {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return users?.userList?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: kIdentifier) as! UserTableViewCell
-        cell.nameLabelOutlet.text = "Name"
-        cell.descriptionLabelOutlets.text = "Descriptions"
+      
+        guard let user = users?.userList?[indexPath.row] else { return UITableViewCell()}
+        cell.setupCell(with: user)
         return cell
     }
     
