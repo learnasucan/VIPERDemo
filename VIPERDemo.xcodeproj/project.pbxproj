@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88035BFE285C42FB000EC7CC /* UserListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88035BFD285C42FB000EC7CC /* UserListVC.swift */; };
+		88035C01285C56F8000EC7CC /* Storyboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88035C00285C56F8000EC7CC /* Storyboard+Extension.swift */; };
 		88673ACF285B42DD00EF781C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88673ACE285B42DD00EF781C /* AppDelegate.swift */; };
 		88673AD1285B42DD00EF781C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88673AD0285B42DD00EF781C /* SceneDelegate.swift */; };
-		88673AD3285B42DD00EF781C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88673AD2285B42DD00EF781C /* ViewController.swift */; };
 		88673AD6285B42DE00EF781C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88673AD4285B42DE00EF781C /* Main.storyboard */; };
 		88673AD8285B42E600EF781C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88673AD7285B42E600EF781C /* Assets.xcassets */; };
 		88673ADB285B42E600EF781C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88673AD9285B42E600EF781C /* LaunchScreen.storyboard */; };
@@ -24,6 +25,7 @@
 		88673B0B285B44DA00EF781C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88673B0A285B44DA00EF781C /* APIManager.swift */; };
 		88673B0E285B496E00EF781C /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88673B0C285B496E00EF781C /* UserTableViewCell.swift */; };
 		88673B0F285B496E00EF781C /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88673B0D285B496E00EF781C /* UserTableViewCell.xib */; };
+		88673B11285B563900EF781C /* UsersProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88673B10285B563800EF781C /* UsersProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		88035BFD285C42FB000EC7CC /* UserListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListVC.swift; sourceTree = "<group>"; };
+		88035C00285C56F8000EC7CC /* Storyboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Extension.swift"; sourceTree = "<group>"; };
 		88673ACB285B42DD00EF781C /* VIPERDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88673ACE285B42DD00EF781C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88673AD0285B42DD00EF781C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		88673AD2285B42DD00EF781C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		88673AD5285B42DE00EF781C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88673AD7285B42E600EF781C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88673ADA285B42E600EF781C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +68,7 @@
 		88673B0A285B44DA00EF781C /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		88673B0C285B496E00EF781C /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		88673B0D285B496E00EF781C /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		88673B10285B563800EF781C /* UsersProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88035BFF285C56B7000EC7CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				88035C00285C56F8000EC7CC /* Storyboard+Extension.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		88673AC2285B42DD00EF781C = {
 			isa = PBXGroup;
 			children = (
@@ -117,9 +129,9 @@
 			children = (
 				88673AFF285B431200EF781C /* VIPER */,
 				88673AFE285B430400EF781C /* APIDEMO */,
+				88035BFF285C56B7000EC7CC /* Resources */,
 				88673ACE285B42DD00EF781C /* AppDelegate.swift */,
 				88673AD0285B42DD00EF781C /* SceneDelegate.swift */,
-				88673AD2285B42DD00EF781C /* ViewController.swift */,
 				88673AD4285B42DE00EF781C /* Main.storyboard */,
 				88673AD7285B42E600EF781C /* Assets.xcassets */,
 				88673AD9285B42E600EF781C /* LaunchScreen.storyboard */,
@@ -163,6 +175,8 @@
 				88673B02285B439B00EF781C /* UserListInteractor.swift */,
 				88673B06285B43E200EF781C /* UserListRouter.swift */,
 				88673B08285B43FC00EF781C /* UserListEntity.swift */,
+				88673B10285B563800EF781C /* UsersProtocols.swift */,
+				88035BFD285C42FB000EC7CC /* UserListVC.swift */,
 			);
 			path = VIPER;
 			sourceTree = "<group>";
@@ -299,10 +313,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88673AD3285B42DD00EF781C /* ViewController.swift in Sources */,
+				88035BFE285C42FB000EC7CC /* UserListVC.swift in Sources */,
 				88673B05285B43CE00EF781C /* UserListPresenter.swift in Sources */,
+				88035C01285C56F8000EC7CC /* Storyboard+Extension.swift in Sources */,
 				88673B01285B436700EF781C /* UserListViewController.swift in Sources */,
 				88673B0B285B44DA00EF781C /* APIManager.swift in Sources */,
+				88673B11285B563900EF781C /* UsersProtocols.swift in Sources */,
 				88673B0E285B496E00EF781C /* UserTableViewCell.swift in Sources */,
 				88673B07285B43E200EF781C /* UserListRouter.swift in Sources */,
 				88673B03285B439B00EF781C /* UserListInteractor.swift in Sources */,
